@@ -1,0 +1,130 @@
+Angular Basic Code
+
+
+
+1.to create project=>ng new project-name				1.components						
+2.to project run=>ng serve						         2.modules		
+3.to create a component=>ng g c component-name				3.di
+4.to create service=>ng g s service-name				  4.services
+5.to create directives=>ng g d directive-name				5.observable
+									subscriber
+									subscribe
+
+                              Angular Building blocks			6.subject
+
+									7.property binding
+
+1.module=>to import libraries/root module-AppModule			8.event binding @output
+2.component-{html,css,ts} root component-AppComponent			9.life cycle hooks
+3.data bining-sharing data within a component
+
+	3.1.one way binding-data flow in one direction
+		3.1.1.component to view
+			3.1.1.1.string interpolation-syntax:{{expression}}
+			3.1.1.2.property binding-syntax:[target-property]="source-property"
+		3.1.2.view to component
+			3.1.2.1.event binding-syntax: (event-name)="function call"
+			3.1.2.2.event binding using $event argument
+				syntax-: (event-name)="function call($event)"
+			3.1.2.3.template referencing variable-syntax:#variable-name
+
+	3.2.two way binding-data flow in two direction-import FormsModule in AppModule
+				syntax: [(ngModel)]="variable-name" set name property of the tag if we used  ngmodel inside a form tag
+
+4.app routing module=>to set path for an html page
+5.dependency injection=>to communicate data between class/component
+6.angular services=>to keep redundant code
+7.ng submitt=>to submit entire form
+8.angular directivess=>to manipulate dom
+
+	8.1 component directives
+	8.2 structural directives-syntax *keyword="condition"
+		8.2.1 ngIf=>syntax-*ngIf="conition"
+		8.2.2 ngSwitch
+		8.2.3 ngFor
+	8.3 attribute directives-to apply set of style to  html
+		8.3.1 in built-ngClass
+		8.3.2 userdefined
+9.angular forms
+	9.1 template driven angular forms-first design the html page
+	9.2 model driven angular forms-first design the model in ts file
+		9.2.1 reactive forms-add validation to the forms-ReactiveFormsModule
+			{form group-Form Builder,forrm array,form control name}
+10.local storage-to store data permanently in a browser
+	10.1 setItem-to store
+	10.2 getItem-to get
+	10.3 removeItem-to remove
+11.pipe-to transform data to another format
+	syntax-{value_expression |pipe operator[:pipe argument]}
+12.parent-child communication
+	12.1 parent to child=>input decorator
+	12.2 child to parent=>output decorator
+13.EventEmitter-to create userdfined event, to occur the event-emit()
+14.animation
+15.client server integration
+	15.1 import HttpClientModule in AppModule.ts
+	15.2 inject HttpClient in DataServices
+	15.3 using Http request craete api call
+16.solve asynchronous events-RxJS lbraries
+	16.1 observable-to solve asynchronous event
+		16.1.1 subscribe-resolved state
+		16.1.2 catch-reject state
+		
+
+			
+			HOW TO GET ANGULAR BUILD
+
+
+step1=>	ng build --prod ,then we can get new folder =>dist
+step2=>create new server =>npm i -g http-server
+step3=>open new terminal=>http-server
+
+
+		             SERVER CREATION= express/node js
+
+	command
+
+	1.create package.json=>npm init
+	2.install express=>npm i express
+	3.import express=>require('express')
+	4.create app=>const app=express()
+	5.setup port number=>app.listen(3000,()=>{ body })  
+	6.to run server=>node index.js
+	7.avoid recompile-to install nodemon=>npm i -g nodemon 
+	8.install jsonwebtoken-npm i jsonwebtoken
+	9.install mongoose-npm mangoose
+	10.install cors-npm i cors
+
+	
+
+	steps
+
+	1.create folder for server			100=>information,200=>success,300=>
+	2.create package.json				400=>client side error, 500=>server side error
+	3.install express
+	4.create inex.js file
+	5.import express in index.js file
+	6.create app using express
+	7.setup a port number
+	8.resolve http request
+	9.run server
+	10.parse json data in index.js
+	11.middlewares - (req,res,next)=>{}
+		11.1 Application Specific Middlewares
+		11.2 router specfic middlewares
+	12.JWT Token-to authenticate user
+		12.1 token generation-sign()
+		12.2 token validation-verify()
+	13.db connection
+		13.1 install mongoose
+		13.2 import mongoose
+		13.3 define connection string
+		13.4 create model
+		13.5 export model
+	14.promise-to deal asynchronus events
+		14.1 then()-resolved state
+		14.2 catch()-rejeted state
+	15.cors-cross origin resource sharing
+		15.1 install cors
+		15.2 import to index.js file
+		15.3

@@ -1,0 +1,92 @@
+Angulat Basic commands
+-----------------------
+1. To create project -- ng new project-name
+
+2. To run a project --- ng serve
+
+3. To create a component -- ng g c component-name
+
+4. To create a service -- ng g s service-name
+
+Angulat Building Blocks
+========================
+1. Module--To improve libraries/ root module-AppModule
+
+2.Component -- { html,css,ts } -- root componeny-AppComponent
+
+3. Data binding -- Sharing data within a component
+    
+    3.1 One way binding --- Data flows in one direction
+
+        3.1.1 Component to view
+
+            3.1.1.1 String interpolation -- Syntax -- {{expression}}
+
+            3.1.1.2 Property binding -- Syntax -- [target-property]="source-property"
+        
+        3.1.2 View to component
+
+            3.1.2.1 Event binding -- Syntax -- (event-name)="function call"
+
+            3.1.2.2 Event binding using event as argument - 
+                        Syntax -- (event-name)="function call($event)"
+
+            3.1.2.3 Template referencing variable -- Syntax -- #variable-name
+    
+    3.2 Two way binding -- Data flows in two direction -- Import FormsModule in AppModule
+                    Syntax -- [(ngModel)]="variable-name"--- set name property of the tag if we use 
+                                                             ngModel inside a form tag.
+
+4. App routing module - To set path for an html page
+
+5. Dependency Injection - To communicate data between class/Component
+
+6. Angular services - To keep redundent codes
+
+7. (ngSubmit) - to submit an entire form
+
+8. Angular Directives - To manipulate DOM
+
+    8.1 Component Directives
+
+    8.2 Structural Directives - Syntax : *keyword="condition"
+
+        8.2.1 ngIf - Syntax : *ngIf="condition"
+
+        8.2.2 ngSwitch
+
+        8.2.3 ngFor
+    
+    8.3 Attribute Directives - To apply set of style to html based on a condition   
+
+9. Angular Forms
+
+    9.1 Template Driven Angular Forms - First design the html page
+
+    9.2 Model Driven Angular Forms - First design the model in ts(test file) file
+
+        9.2.1 Reactive Forms - Add validation to the Forms - ReactiveFormsModule-
+                    {Form Group- Form Builder class,Form Array,Form Controle Name}    
+
+10. Local Storage - To store data permently in a browser
+
+    10.1 setItem - To store
+
+    10.2 getItem - To getItem
+
+    10.3 removeItem - To delete
+
+11. Pipe - To transform data to another form
+        syntax: 
+
+12. Parent child communication
+
+    12.1 Parent to child - Input Decrator(a data within another data @symbol)
+
+    12.2 Child to Parent - Output  Decrator
+
+13. EventEmitter - To create userdefined events, to occur the event - emit()
+
+14. Animation
+
+15. 
