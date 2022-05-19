@@ -64,23 +64,6 @@ export class DataService {
     }
     return this.http.post('http://localhost:3000/register', data)
 
-    // let database = this.database
-
-    // if (acno in database) {
-    //   return false
-    // }
-    // else {
-    //   database[acno] = {
-    //     acno,
-    //     uname,
-    //     password,
-    //     balance: 0,
-    //     transaction:[]
-
-    //   }
-    //   this.setData()
-    //   return true
-    // }
   }
 
 
@@ -182,42 +165,6 @@ export class DataService {
     // withdraw API
     return this.http.post('http://localhost:3000/withdraw', data, this.getOptions())
 
-    // var amount = parseInt(amt)
-    // let database = this.database
-    // if (acno in database) {
-
-    //   if (password == database[acno]["password"]) {
-
-    //     if (database[acno]["balance"] > amount) {
-    //       database[acno]["balance"] -= amount
-
-    //       database[acno]["transaction"].push({
-    //         amount:amount,
-    //         type:"DEBIT"
-    //       })  
-    //       this.setData()
-    //       return database[acno]["balance"]
-
-
-    //     } else {
-    //       alert("insufficient balance")
-    //       return false
-
-    //     }
-
-
-    //   }
-    //   else {
-    //     alert("incorrect password")
-    //     return false
-    //   }
-
-
-    // }
-    // else {
-    //   alert("user does not exist")
-    //   return false
-    // }
   }
 
   // transaction

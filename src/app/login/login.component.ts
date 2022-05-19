@@ -24,11 +24,6 @@ export class LoginComponent implements OnInit {
   })
 
 
-  database: any = {
-    1000: { acno: 1000, uname: "Neer", password: 1000, balance: 5000 },
-    1001: { acno: 1001, uname: "Vyom", password: 1001, balance: 5000 },
-    1002: { acno: 1002, uname: "Laisha", password: 1002, balance: 5000 }
-  }
   constructor(private router: Router, private ds: DataService, private fb: FormBuilder) { }
 
   ngOnInit(): void {
@@ -47,34 +42,6 @@ export class LoginComponent implements OnInit {
 
 
   }
-
-  // login (template)
-
-  //   login(a:any,p:any){
-  //     var acno=a.value
-  //     var pswd=p.value
-  //     let database=this.database
-  //     if(acno in database){
-
-  //       if(pswd==database[acno]["password"]){
-  //         alert("login success")
-
-  //       }
-  //       else
-  //       {
-  //        alert("incorrect password")
-  //       }
-
-
-  //     }
-  //     else
-  //     {
-  //       alert("user doesnot exist")
-  //     }
-
-  //   }
-
-  // }
 
 
 
